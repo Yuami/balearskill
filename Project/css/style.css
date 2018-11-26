@@ -1,0 +1,133 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto+Condensed:400,400i,700,700i');
+
+:root {
+    /*
+        Variables utils per consistencia
+        ---------- Colors -------------
+    */
+    --color-dark-2: #6d6875;
+    --color-dark-1: #b5838d;
+    --color-main: #e5989b;
+    --color-light-1: #ffb4a2;
+    --color-light-2: #ffcdb2;
+}
+
+
+body * {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+}
+
+.text-main-light-1 {
+    color: var(--color-light-1);
+}
+
+.text-main-light-2 {
+    color: var(--color-light-2);
+}
+
+.text-main {
+    color: var(--color-main);
+}
+
+.text-main-dark-1 {
+    color: var(--color-dark-1);
+}
+
+.text-main-dark-2 {
+    color: var(--color-dark-2);
+}
+
+.full-screen {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.center-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-gradient {
+    background: #e5989b;
+    background: linear-gradient(to right, #ffb4a2, #e5989b, #b5838d);
+}
+
+.card-form {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER */
+
+.foot {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    padding-top: 1em;
+    overflow: hidden;
+}
+
+/* ----------------- Rating -----------------*/
+.star {
+    color: gold;
+}
+
+.star-empty {
+    color: #d0d0d0;
+}
+
+.rating-block{
+    background-color: var(--color-light-1);
+    border:1px solid #EFEFEF;
+    padding:15px 15px 20px 15px;
+    border-radius:3px;
+    color: white;
+}
+.bold{
+    font-weight:700;
+}
+.padding-bottom-7{
+    padding-bottom:7px;
+}
+
+.review-block{
+    background-color:#FAFAFA;
+    border:1px solid #EFEFEF;
+    padding:15px;
+    border-radius:3px;
+    margin-bottom:15px;
+}
+.review-block-name{
+    font-size:12px;
+    margin:10px 0;
+}
+.review-block-date{
+    font-size:12px;
+}
+.review-block-rate{
+    font-size:13px;
+    margin-bottom:15px;
+}
+.review-block-title{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.review-block-description{
+    font-size:13px;
+}

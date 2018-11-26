@@ -35,10 +35,6 @@ class Vivienda {
         }
     }
 
-    rate() {
-        Rating.starArr(this.valoracion);
-    }
-
     toCard() {
         return `<div class="col-md-4">
             <div class="card-content">

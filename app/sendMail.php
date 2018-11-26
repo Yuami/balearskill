@@ -1,10 +1,10 @@
 <?php
 require $_SERVER['DOCUMENT_ROOT'] . "app/helpers/Mail.php";
 
-if (isset($_POST['subject']) && isset($_POST['message']) && isset($_POST['how'])) {
+if (isset($_POST['email']) && isset($_POST['message']) && isset($_POST['who'])) {
     $to = "skills01@balearskills17.org";
-    $subject = $_POST['subject'];
-    $subject .= " - (" . $_POST['how'] . ")";
+    $subject = $_POST['email'];
+    $subject .= " - (" . $_POST['who'] . ")";
     $message = $_POST['message'];
     $m = new Mail($to, $subject, $message);
 } else {

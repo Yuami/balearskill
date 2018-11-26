@@ -21,7 +21,7 @@
 
 <section>
     <div class="container py-3">
-        <form action="mail.php" method="post" class="card-form form-signin">
+        <form action="app/sendMail.php" method="post" class="card-form form-signin">
 
             <div class="card card-form">
                 <div class="card-header p-0">
@@ -38,7 +38,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fa fa-user text-main"></i></div>
                             </div>
-                            <input type="text" class="form-control" id="nombre" name="nombre"
+                            <input type="text" class="form-control" id="nombre" name="who"
                                    placeholder="Nombre y Apellido" required>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                             <div class="input-group-prepend">
                                 <div class="input-group-text"><i class="fa fa-comment text-main"></i></div>
                             </div>
-                            <textarea class="form-control" placeholder="Envianos tu Mensaje" required></textarea>
+                            <textarea class="form-control" placeholder="Envianos tu Mensaje" name="message" required></textarea>
                         </div>
                     </div>
 

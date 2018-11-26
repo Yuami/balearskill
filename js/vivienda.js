@@ -52,7 +52,7 @@ class Vivienda {
                     <div class="valoracion mb-2">
         ${Rating.starArr(this.valoracion)}
 </div>
-        <a href="detalleVivienda?id=${this.id}" class="btn-card">Read</a>
+        <a href="form.php?id=${this.id}" class="btn-card">Read</a>
             </div>
             </div>
             </div>`
@@ -66,8 +66,10 @@ let v = new Vivienda(1,"Mi casa to chula", "Arta", "Prueba adreça", 4, 4,2,2,1,
     "Prueba descripcionPrueba descripcionPrueba descripcionPrueba descripcionPrueba descripcion",
     ["img/fotos/1.jpg"]);
 
-let
-//
-// let list = $('#list-container');
-// list.append(v.toCard());
+let list = $('#list-container');
+list.append(v.toCard());
+list.append(v.toCard());
+list.append(v.toCard());
+list.append(v.toCard());
+list.append(v.toCard());
 
